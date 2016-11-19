@@ -1,4 +1,29 @@
-import http.client
+from urllib.request import Request, urlopen
+from urllib.error import URLError, HTTPError
+    
+class thisworksbetter(object):
+ 	"""docstring for thisworksbetter"""
+ 	def __init__(self, arg):
+ 		super(thisworksbetter, self).__init__()
+ 		self.arg = arg
+ 		 thisworksbetter:
+ 
+    req = Request('http://eatadick')
+    try:
+        response = urlopen(req)
+    except HTTPError as e:
+        print('The server couldn\'t fulfill the request.')
+        print('Error code: ', e.code)
+    except URLError as e:
+        print('We failed to reach a server.')
+        print('Reason: ', e.reason)
+    else:
+        print('everything is fine')
+        mSearchBox = cdriver.find_element_by_id("pro-landing-search-box")
+
+# sublime added lines 5-9 to when i made the function a class
+
+
 
 class shitWorks :
 
