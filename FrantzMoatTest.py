@@ -1,19 +1,13 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-
-fiya = webdriver.Chrome("/Users/NewUser/Downloads/Automation/chromedriver")
-fiya.get("http://www.moat.com")
-searchElement = fiya.find_element_by_id("pro-landing-search-box")
-searchElement2 = fiya.find_element_by_xpath('//*[@id="search-bar"]/div/div[1]/span/a[1]').click()
-
-searchElement.send_keys("cocaine" + Keys.RETURN)
-print(searchElement2)
-
-"""
-//*[@id="search-bar"]/div/div[1]/span
-
-//*[@id="search-bar"]/div/div[1]/span/a[1]
-//*[@id="search-bar"]/div/div[1]/span/a[3]
-
-//*[@id="popup-template"]/div/div[1]/div[2]/table/tbody/tr[5]/td[2]/div/a
-"""
+def comp(list1, list2):
+    for elementText in list1:
+        if elementText in list2:
+            return True
+        else:
+            return False
+            break
+list1 = ["moat.com/advertiser/ffw?report_type=display&creative_md5=9436b5e508dcafb24e7bbf05a8cf1d4b" , "moat.com/advertiser/ffw?report_type=display&creative_md5=e054cb32bd456de456f582577a8b9a85"]
+shit2 = [4 , 2]
+print(comp(list1 , shit2))
+def returnMatches(a, b):
+    return list(set(a) & set(b))
+print(returnMatches(list1, shit2))
