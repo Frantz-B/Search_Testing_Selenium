@@ -1,12 +1,20 @@
-import time
-from selenium import webdriver
+import http.client
 
-class ItFuckingWorkedFinally :
-    driver = webdriver.Chrome('/Users/NewUser/Downloads/Automation/chromedriver')  # Optional argument, if not specified will search path.
-    driver.get('http://www.google.com/')
-    time.sleep(5) # Let the user actually see something!
-    search_box = driver.find_element_by_name('q')
-    search_box.send_keys('ChromeDriver')
-    search_box.submit()
-    time.sleep(5) # Let the user actually see something!
-    driver.quit()
+class shitWorks :
+
+    urlConnect = http.client.HTTPConnection("moat.com")
+    urlConnect.request("GET" , "/")
+    var = urlConnect.getresponse()
+    print (var.status)
+    print ('what th ')
+    #http: // newtours.demoaut.com / mercuryunderconst.php
+
+# think below was an attempt to strip the beginning of an url because method didn't like it
+# so it was a lil annoying
+
+"""urlConnection = http.client.HTTPConnection(mTryLink1.get_attribute('href').lstrip('https://'))
+urlConnection.request('GET',"")
+print(mTryLink1.get_attribute('href'))
+print(mTryLink1.get_attribute('href').lstrip('https://'))
+print(urlConnection.getresponse().status)
+"""
