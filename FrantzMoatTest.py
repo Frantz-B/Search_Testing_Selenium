@@ -8,7 +8,7 @@ from selenium.webdriver import ActionChains
 
 chromeDriverLoc = "/Users/NewUser/Downloads/Automation/chromedriver"
 mURL = 'http://www.moat.com'
-mSearchTerm = 'betterment'
+mSearchTerm = 'shit'  # comet yields neg result
 
 #Location of elements on main page (moat.com)
 mSearchBox = "pro-landing-search-box"  #ID of search box
@@ -24,9 +24,6 @@ recentAds4 = '//*[@id="search-bar"]/div/div[2]/ul/li[4]/h4'
 allegedSiteCreativeCount = '//*[@id="comp-header"]/div[1]/div[2]/span'
 popupCreativeLoc = '//*[@id="popup-template"]/div/div[1]/div[2]/table/tbody/tr[5]/td[2]/div/a'
 popupCreativeLinkLoc = '//*[@id="popup-template"]/div/div[1]/div[2]/table/tbody/tr[5]/td[2]/div/div/input'
-
-cdriver = webdriver.Chrome(chromeDriverLoc)
-cdriver.get(mURL)
 
 # capturing Web Elements
 def tryTheseTextListCapture():
@@ -54,11 +51,7 @@ def recentAdDisplayTimeCapture():
     mRecentAdList = [recentAdsEle1, recentAdsEle2, recentAdsEle3, recentAdsEle4]
     return mRecentAdList
 
-# List for captured Try These links & text.  Also list of Recent Ads from Main Moat page
-
-#mListLnk = [mTryLink1.get_attribute('href'), mTryLink2.get_attribute('href'), mTryLink3.get_attribute('href')]
-#mListRecentAd = [recentAdsEle1.text, recentAdsEle2.text, recentAdsEle3.text, recentAdsEle4.text]
-
+# Functions that answers Moat Automation test
 def verifyRandom():
     "Verifies list of Try These links are different from New list of links"
     mList1 = tryTheseTextListCapture()
@@ -111,7 +104,7 @@ def verifySearchResultsAdCount(searchTerm):
         loadMeBtn.click()
         time.sleep(4)
     creativesListDisplayed = cdriver.find_elements_by_class_name('ad-cell')
-
+    print()
     if len(creativesListDisplayed) == creativeCountNum : print('Search Results Ad Count Function:  PASSED')
     else : print('Search Results Ad Count:  FAILED')
 
@@ -132,10 +125,13 @@ def verifyShareAd(searchTerm):
     if popupCreativeLink.is_displayed() : print("Share This Ad Function:  PASSED")
     else : print('Share This Ad Function:  FAILED')
 
+cdriver = webdriver.Chrome(chromeDriverLoc)
+cdriver.get(mURL)
+
 verifyRandom()
 verifyWorkingLnks()
 verifyRecentAdTime()
 verifySearchResultsAdCount(mSearchTerm)
 verifyShareAd(mSearchTerm)
 
-#cdriver.quit()
+#cdriver.quit()  pg 246 in Python pdf book
