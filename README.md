@@ -27,4 +27,4 @@ Once you have both files, **FrantzMoatTest.py** is the script that needs to exec
 ---
 ####Manual_Section: contents
 
-Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file **Sample Test Cases - Search functionality - Moat.txt**.  There are a number of bugs I found and, added some personal notes in the **Bugs found, Search Terms, etc.txt** file.
+Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file **Sample Test Cases - Search functionality - Moat.txt**.  There are a number of bugs I found and added some personal notes in the **Bugs found, Search Terms, etc.txt** file.
