@@ -1,7 +1,7 @@
 # Search_Testing_Selenium
 ###Testing search functionality using Selenium framework
 
-**FrantzMoatTest.py** and **MoatPage.py are the two Python scripts that are needs to be downloaded in order to run.  I wrote them in a matter where you will not need to download other libraries but I do assume you have Python 3.5 installed.
+**FrantzMoatTest.py** and **MoatPage.py** are the two Python scripts that are needs to be downloaded in order to run.  I wrote them in a matter where you will not need to download other libraries but I do assume you have Python 3.5 installed.
 
 Once you have both files, **FrantzMoatTest.py** is the script that needs to executed.  You can execute with the following command :
 `python FrantzMoatTest.py -v`
