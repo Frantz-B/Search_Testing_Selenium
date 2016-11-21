@@ -3,7 +3,10 @@
 
 **FrantzMoatTest.py** and **MoatPage.py** are the two Python scripts that needs to be downloaded in order to run.  I wrote them in a matter where you will not need to download other libraries but I do assume you have Python 3.5 installed.  This was a solution I created in response to the challenge/test I was given below.
 
-Once you have both files, **FrantzMoatTest.py** is the script that needs to executed.  You can execute with the following command : ```python FrantzMoatTest.py -v```
+Once you have both files, **FrantzMoatTest.py** is the script that needs to executed.  You can execute with the following command : 
+```
+python FrantzMoatTest.py -v
+```
 
 ---
 
@@ -27,7 +30,7 @@ Once you have both files, **FrantzMoatTest.py** is the script that needs to exec
 ####Manual_Section: contents
 
 Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file:
-  **Sample Test Cases - Search functionality - Moat.txt**.  
+**Sample Test Cases - Search functionality - Moat.txt**
 
 There are a number of bugs I found and I added some personal notes in the file:
-  **Bugs found, Search Terms, etc.txt**
+**Bugs found, Search Terms, etc.txt**
