@@ -27,7 +27,7 @@ python FrantzMoatTest.py -v
 * After dealing with the 3rd question, the 4th question was rather quick & easy to solve :smirk:.
 
 ---
-###Manual_Section: contents
+###Manual_Section: :file_folder: contents
 
 Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file:
 
