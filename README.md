@@ -30,7 +30,9 @@ python FrantzMoatTest.py -v
 ####Manual_Section: contents
 
 Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file:
+
 **Sample Test Cases - Search functionality - Moat.txt**
 
 There are a number of bugs I found and I added some personal notes in the file:
+
 **Bugs found, Search Terms, etc.txt**
