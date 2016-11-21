@@ -10,7 +10,7 @@ python FrantzMoatTest.py -v
 
 ---
 
-####Challenge Issued:
+###Challenge Issued:
 
   The site under test is `www.moat.com`.  I was tasked to write a small handful of Selenium tests in Python to satisfy the following:
 * Verify that the _"Try These"_ links are random and that they work.
@@ -20,14 +20,14 @@ python FrantzMoatTest.py -v
 
 ---
 
-####Difficulties I overcame:
+###Difficulties I overcame:
 
 * Finding the Right library/class that gave accurate Passes and Fails for a given url.  Originally, I used _'HTTP.client'_ class but the _'urllib'_ class was more effective.
 * Dealing with the dynamic grid and not being able to easily find the location of the creatives on said grid was quite challenging. This is because when the mouse cursor goes over a creative, it quickly & automatically displays a popup.  However, after asking for help of which didn't pan out, I did eventually figure it out.  Yea, I was proud...
 * After dealing with the 3rd question, the 4th question was rather quick & easy to solve :smirk:.
 
 ---
-####Manual_Section: contents
+###Manual_Section: contents
 
 Inside this folder are sample test cases based on my exploratory testing of the search section.  This is in the file:
 
